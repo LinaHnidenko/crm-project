@@ -39,7 +39,7 @@ const CoWorkers = () => {
         <h2 className="co-workers-title">
           <span>Co-workers</span>| Marketing department
         </h2>
-
+        {/* Mobile */}
         <div className="co-workers-container">
           {workers.map(({ name, position, since }) => (
             <details className="co-workers-details" key={name}>
@@ -72,6 +72,7 @@ const CoWorkers = () => {
             </details>
           ))}
 
+          {/* For Tablet and Desktop */}
           <table className="co-workers-table">
             <caption className="visually-hidden">Co-workers info</caption>
             <thead>
