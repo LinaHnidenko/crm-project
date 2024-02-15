@@ -8,6 +8,8 @@ import { TbReportSearch } from "react-icons/tb";
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {
+  // const pages = [];
+
   return (
     <aside className="sidebar">
       <nav className="menu">
