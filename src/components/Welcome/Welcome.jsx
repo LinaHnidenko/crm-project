@@ -3,12 +3,15 @@ import { FaPlus } from "react-icons/fa6";
 const Welcome = () => {
   return (
     <section className="welcome">
-      <h1 className="welcome-title">Hi, Lina</h1>
-      <p className="welcome-text">Welcome into Speed CRM Dashboard</p>
+      <h1 className="welcome-title">
+        <span className="page-title-accent">Hi, Lina</span> Welcome into Speed
+        CRM Dashboard
+      </h1>
+
       {/* maybe delete */}
-      <button className="welcome-btn">
-        <FaPlus className="welcome-icon" />
-        Primary normal
+      <button className="welcome-btn btn btn--primary">
+        <FaPlus className="welcome-icon btn-icon" />
+        <span className="btn-inner">Primary normal</span>
       </button>
     </section>
   );

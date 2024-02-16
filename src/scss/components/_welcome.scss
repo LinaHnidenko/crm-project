@@ -1,0 +1,17 @@
+@use "btn/btn" as btn with (
+  $btn-layer-spacing: 4px
+);
+
+.welcome {
+  grid-area: welcome;
+}
+
+.welcome-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.welcome-btn {
+  display: block;
+  margin: 0 auto;
+}

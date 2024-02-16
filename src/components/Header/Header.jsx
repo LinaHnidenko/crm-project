@@ -1,15 +1,18 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 import { ImSearch } from "react-icons/im";
 import { FaRegBell } from "react-icons/fa";
+import { useState } from "react";
 
-const Header = () => {
+const Header = ({ isOpenBurger, setIsOpenBurger, isLarge }) => {
   return (
     <header className="header">
       {/* burger */}
-      <button className="menu-btn">
-        <RxHamburgerMenu className="menu-btn-icon" />
-        Overview
-      </button>
+      {!isLarge && !isOpenBurger && (
+        <button className="menu-btn" onClick={() => setIsOpenBurger(true)}>
+          <RxHamburgerMenu className="menu-btn-icon" />
+          Overview
+        </button>
+      )}
 
       <label className="search-field">
         <ImSearch className="search-icon" />

@@ -7,15 +7,21 @@ import { TiMessages } from "react-icons/ti";
 import { TbReportSearch } from "react-icons/tb";
 import { Link } from "react-router-dom";
 
-const Sidebar = () => {
+const Sidebar = ({ isLarge, setIsOpenBurger }) => {
   // const pages = [];
 
   return (
-    <aside className="sidebar">
+    <aside className="sidebar is-open">
       <nav className="menu">
-        <button className="menu-btn" type="button">
-          <MdOutlineClose className="menu-btn-icon" />
-        </button>
+        {!isLarge && (
+          <button
+            className="menu-btn"
+            type="button"
+            onClick={() => setIsOpenBurger(false)}
+          >
+            <MdOutlineClose className="menu-btn-icon" />
+          </button>
+        )}
 
         <Link to="/" className="logo">
           <AiFillDashboard className="logo-icon" />

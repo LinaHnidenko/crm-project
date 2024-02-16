@@ -30,7 +30,7 @@ const Reports = () => {
       </h2>
       <ul className="reports-list">
         {reports.map(({ worker, progress }) => (
-          <li className="reports-item">
+          <li className="reports-item" key={worker}>
             <div className="reports-co-worker co-worker">
               <div className="co-worker-thumb">
                 <IoPersonCircle className="co-worker-avatar" />

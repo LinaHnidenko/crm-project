@@ -37,7 +37,7 @@ const Tasks = () => {
       </h2>
       <ul className="tasks-list">
         {tasks.map(({ heading, decs, time }) => (
-          <li className="tasks-item" key={time}>
+          <li className="tasks-item" key={heading}>
             <label className="tasks-checkbox">
               <input
                 type="checkbox"
