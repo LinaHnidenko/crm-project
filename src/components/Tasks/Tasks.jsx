@@ -44,7 +44,7 @@ const Tasks = () => {
                 className="tasks-input visually-hidden"
                 value="unfinished"
               />
-              <MdOutlineDone />
+              <MdOutlineDone className="tasks-checkbox-icon" />
             </label>
 
             <div className="tasks-info">

@@ -36,22 +36,22 @@ const Sidebar = ({ isLarge, setIsOpenBurger }) => {
             </Link>
           </li>
           <li className="menu-item">
-            <Link className="menu-link current">
+            <Link className="menu-link ">
               <RiContactsBook2Line className="menu-icon" /> Contacts
             </Link>
           </li>
           <li className="menu-item">
-            <Link className="menu-link current">
+            <Link className="menu-link ">
               <RxBackpack className="menu-icon" /> Companies
             </Link>
           </li>
           <li className="menu-item">
-            <Link className="menu-link current">
+            <Link className="menu-link ">
               <TiMessages className="menu-icon" /> Message
             </Link>
           </li>
           <li className="menu-item">
-            <Link className="menu-link current">
+            <Link className="menu-link ">
               <TbReportSearch className="menu-icon" /> Report
             </Link>
           </li>

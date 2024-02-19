@@ -23,8 +23,8 @@ const Header = ({ isOpenBurger, setIsOpenBurger, isLarge }) => {
         />
       </label>
 
-      <button className="message-btn">
-        <FaRegBell className="message-icon" />
+      <button className="notification-btn">
+        <FaRegBell className="notification-icon" />
       </button>
     </header>
   );
