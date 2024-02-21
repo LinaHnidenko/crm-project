@@ -72,6 +72,12 @@ const CoWorkers = () => {
             </details>
           ))}
 
+          <ul className="co-workers-board board">
+            <li className="board-item">
+              <div className="board-left"></div>
+            </li>
+          </ul>
+
           {/* For Tablet and Desktop */}
           <table className="co-workers-table">
             <caption className="visually-hidden">Co-workers info</caption>
