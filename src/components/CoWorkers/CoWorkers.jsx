@@ -161,24 +161,6 @@ const CoWorkers = () => {
             <p className="badge-danger">Ended</p>
           </div>
         </li>
-        <li className="board-item">
-          <div className="board-left">
-            <h3 className="board-caption">Sent benefit review by Sunday</h3>
-            <p className="board-details">
-              Due date: <time>December 23, 2023</time>
-            </p>
-            <div className="board-coworker person">
-              <div className="person-thumb">
-                <RxAvatar className="person-avatar" />
-              </div>
-              <p className="person-caption">Erik Math</p>
-            </div>
-          </div>
-          <div className="board-right">
-            <p className="board-tag">Reminder</p>
-            <p className="badge-success">Completed</p>
-          </div>
-        </li>
       </ul>
     </section>
   );
