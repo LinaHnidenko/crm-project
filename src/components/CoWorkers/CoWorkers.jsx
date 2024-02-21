@@ -1,5 +1,3 @@
-import { HiOutlinePlusCircle } from "react-icons/hi";
-import { HiOutlineMinusCircle } from "react-icons/hi";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { RxAvatar } from "react-icons/rx";
 import { GrRefresh } from "react-icons/gr";
@@ -103,9 +101,7 @@ const CoWorkers = () => {
               {workers.map(({ name, position, since }) => (
                 <tr key={name}>
                   <td>
-                    <div className="thumb">
-                      <RxAvatar />
-                    </div>
+                    <RxAvatar className="thumb" />
                   </td>
                   <td>{name}</td>
                   <td>{position}</td>
@@ -134,25 +130,53 @@ const CoWorkers = () => {
             <h3 className="board-caption">Sent benefit review by Sunday</h3>
             <p className="board-details">
               Due date: <time>December 23, 2023</time>
-              <div className="board-coworker person">
-                <div className="person-thumb">
-                  <HiOutlinePlusCircle className="person-avatar" />
-                </div>
-                <p className="person-caption">George Fields</p>
-              </div>
             </p>
+            <div className="board-coworker person">
+              <div className="person-thumb">
+                <RxAvatar className="person-avatar" />
+              </div>
+              <p className="person-caption">George Fields</p>
+            </div>
           </div>
           <div className="board-right">
+            <p className="board-tag">Warning</p>
+            <p className="badge-warning">Ending Soon</p>
+          </div>
+        </li>
+        <li className="board-item">
+          <div className="board-left">
             <h3 className="board-caption">Sent benefit review by Sunday</h3>
             <p className="board-details">
               Due date: <time>December 23, 2023</time>
-              <div className="board-coworker person">
-                <div className="person-thumb">
-                  <HiOutlinePlusCircle className="person-avatar" />
-                </div>
-                <p className="person-caption">George Fields</p>
-              </div>
             </p>
+            <div className="board-coworker person">
+              <div className="person-thumb">
+                <RxAvatar className="person-avatar" />
+              </div>
+              <p className="person-caption">Amanda Pitt</p>
+            </div>
+          </div>
+          <div className="board-right">
+            <p className="board-tag">Call</p>
+            <p className="badge-danger">Ended</p>
+          </div>
+        </li>
+        <li className="board-item">
+          <div className="board-left">
+            <h3 className="board-caption">Sent benefit review by Sunday</h3>
+            <p className="board-details">
+              Due date: <time>December 23, 2023</time>
+            </p>
+            <div className="board-coworker person">
+              <div className="person-thumb">
+                <RxAvatar className="person-avatar" />
+              </div>
+              <p className="person-caption">Erik Math</p>
+            </div>
+          </div>
+          <div className="board-right">
+            <p className="board-tag">Reminder</p>
+            <p className="badge-success">Completed</p>
           </div>
         </li>
       </ul>
