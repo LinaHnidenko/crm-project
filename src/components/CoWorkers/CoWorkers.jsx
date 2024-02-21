@@ -1,5 +1,6 @@
 import { HiOutlinePlusCircle } from "react-icons/hi";
 import { HiOutlineMinusCircle } from "react-icons/hi";
+import { IoMdArrowDropdown } from "react-icons/io";
 import { RxAvatar } from "react-icons/rx";
 import { GrRefresh } from "react-icons/gr";
 import { MdOutlineClose } from "react-icons/md";
@@ -31,34 +32,49 @@ const CoWorkers = () => {
       position: "Engineer",
       since: "2019",
     },
+    {
+      name: "Alex Miss",
+      position: "DevOps",
+      since: "2014",
+    },
+    {
+      name: "Alice Morthy",
+      position: "Manager",
+      since: "2021",
+    },
+    {
+      name: "Kate Smith",
+      position: "Assistant",
+      since: "2022",
+    },
   ];
 
   return (
     <section className="co-workers">
       <div className="co-workers-wrapper">
         <h2 className="co-workers-title">
-          <span>Co-workers</span>| Marketing department
+          <span>Co-workers</span> | Marketing department
         </h2>
         {/* Mobile */}
         <div className="co-workers-container">
           {workers.map(({ name, position, since }) => (
             <details className="co-workers-details" key={name}>
               <summary className="co-workers-data">
-                <HiOutlinePlusCircle className="co-worker-icon plus" />
-                <HiOutlineMinusCircle className="co-worker-icon minus" />
-                <div className="co-workers-bio">
-                  <div className="thumb">
-                    <RxAvatar />
+                <div className="details-left">
+                  <IoMdArrowDropdown className="co-worker-icon" />
+
+                  <div className="co-workers-bio">
+                    <RxAvatar className="thumb" />
+                    <p className="co-workers-caption">{name}</p>
                   </div>
-                  <p className="co-workers-caption">{name}</p>
                 </div>
 
                 <div className="co-workers-controls">
-                  <button className="controls-btn">
+                  <button className="controls-btn ">
                     <GrRefresh className="controls-btn-icon success" />
                   </button>
                   <button className="controls-btn">
-                    <MdOutlineClose className="controls-btn-icon close" />
+                    <MdOutlineClose className="controls-btn-icon error" />
                   </button>
                 </div>
               </summary>
@@ -71,13 +87,6 @@ const CoWorkers = () => {
               </div>
             </details>
           ))}
-
-          <ul className="co-workers-board board">
-            <li className="board-item">
-              <div className="board-left"></div>
-            </li>
-          </ul>
-
           {/* For Tablet and Desktop */}
           <table className="co-workers-table">
             <caption className="visually-hidden">Co-workers info</caption>
@@ -117,6 +126,36 @@ const CoWorkers = () => {
           </table>
         </div>
       </div>
+
+      {/* Board */}
+      <ul className="co-workers-board board">
+        <li className="board-item">
+          <div className="board-left">
+            <h3 className="board-caption">Sent benefit review by Sunday</h3>
+            <p className="board-details">
+              Due date: <time>December 23, 2023</time>
+              <div className="board-coworker person">
+                <div className="person-thumb">
+                  <HiOutlinePlusCircle className="person-avatar" />
+                </div>
+                <p className="person-caption">George Fields</p>
+              </div>
+            </p>
+          </div>
+          <div className="board-right">
+            <h3 className="board-caption">Sent benefit review by Sunday</h3>
+            <p className="board-details">
+              Due date: <time>December 23, 2023</time>
+              <div className="board-coworker person">
+                <div className="person-thumb">
+                  <HiOutlinePlusCircle className="person-avatar" />
+                </div>
+                <p className="person-caption">George Fields</p>
+              </div>
+            </p>
+          </div>
+        </li>
+      </ul>
     </section>
   );
 };
