@@ -8,8 +8,6 @@ import { TbReportSearch } from "react-icons/tb";
 import { Link } from "react-router-dom";
 
 const Sidebar = ({ isLarge, setIsOpenBurger }) => {
-  // const pages = [];
-
   return (
     <aside className="sidebar is-open">
       <nav className="menu">
